@@ -28,5 +28,7 @@ def calcolatore():
             perim_rettangolo= float((base_rettangolo*2)+(altezza_rettangolo*2))
             print("Il perimetro del Rettangolo sarà di ", perim_rettangolo, "cm quadrati")
             break
-        
+        else:
+            print("Scelta non valida. Inserire una scelta valida")
+            break
 calcolatore()
