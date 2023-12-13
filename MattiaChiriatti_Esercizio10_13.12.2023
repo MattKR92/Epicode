@@ -1,0 +1,32 @@
+def calcolatore():
+    print("Ciao! Sono il calcolatore di perimetri!")
+    print("Di quale delle seguenti figure vuoi calcolare il perimetro o l'area?")
+    print("1-Quadrato")
+    print("2-Cerchio")
+    print("3-Rettangolo")
+
+    while True:
+        scelta_user= float(input())
+    
+        if scelta_user == 1:
+            print("Ok, procediamo con il perimetro del Quadrato.")
+            lato_quadrato= float(input("Inserisci la lunghezza del lato: "))
+            perim_quadrato= float(lato_quadrato*4)
+            print("Il perimetro del Quadrato sarà di ", perim_quadrato, "cm quadrati")
+            break
+        elif scelta_user == 2:
+            print("Ok, procediamo con la circonferenza del Cerchio.")
+            pi_greco= 3.14
+            raggio_cerchio= float(input("Inserisci la lunghezza del raggio: "))
+            perim_cerchio= float(2*(pi_greco*raggio_cerchio))
+            print("La circonferenza del Cerchio sarà di ", perim_cerchio, "cm quadrati")
+            break
+        elif scelta_user == 3:
+            print("Ok, procediamo con il perimetro del Rettangolo.")
+            base_rettangolo= float(input("Inserisci il valore della base: "))
+            altezza_rettangolo= float(input("Inserisci il valore dell'altezza: "))
+            perim_rettangolo= float((base_rettangolo*2)+(altezza_rettangolo*2))
+            print("Il perimetro del Rettangolo sarà di ", perim_rettangolo, "cm quadrati")
+            break
+        
+calcolatore()
